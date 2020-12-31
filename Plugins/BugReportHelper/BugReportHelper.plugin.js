@@ -607,7 +607,7 @@ module.exports = (() => {
 				
 				async loadIssuesAndSupportChannels(){
 					return new Promise((resolve, reject) => {
-						require("request").get("https://raw.githubusercontent.com/l0c4lh057/BetterDiscordStuff/master/Plugins/BugReportHelper/data.json", (error, response, body) => {
+						require("request").get("https://raw.githubusercontent.com/voidfill/BetterDiscordStuff/master/Plugins/BugReportHelper/data.json", (error, response, body) => {
 							if(error) reject(error);
 							else resolve(JSON.parse(body));
 						});
